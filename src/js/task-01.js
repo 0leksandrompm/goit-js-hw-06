@@ -1,13 +1,8 @@
 
 console.log('Number of categories:', document.querySelector('#categories').children.length);
 
-// console.log('Category:',document.querySelector('li.item').firstElementChild.textContent);
 
-
-const categoriesUl = Array.from( document.querySelectorAll("ul#categories>li.item")  );
-
-  const categoriesList = Array.from(
-    document.querySelectorAll("ul#categories li.item ul ")
+  const categoriesList = Array.from(document.querySelectorAll("ul#categories li.item ul ")
   );
 
   const categoriesArr = [];
