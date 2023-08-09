@@ -5,16 +5,14 @@ console.log('Number of categories:', document.querySelector('#categories').child
   const categoriesList = Array.from(document.querySelectorAll("ul#categories li.item ul ")
   );
 
-  const categoriesArr = [];
+
 
   categoriesList.forEach(element => {
-    categoriesArr.push(
-      `Category: ${element.previousElementSibling.textContent}, Elements: ${element.children.length}`
-    );
-    
+    console.log(`      `);
+
+    console.log(`Category: ${element.previousElementSibling.textContent}`);
+
+    console.log(`Elements: ${element.children.length}`);
   });
 
-  for (let i = 0; i < categoriesArr.length ; i += 1) {
-    console.log(categoriesArr[i]);
-    
-  }
+ 

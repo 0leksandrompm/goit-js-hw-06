@@ -10,7 +10,12 @@ function vvod (evt){
     if (email.value === "" || password.value === "") {
       return alert("Please fill in all the fields!");
     }
+
+    const obj ={};
+    obj.email = email.value
+    obj.password = password.value
+    console.log(obj)
   
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    // console.log(`email: ${email.value}, password: ${password.value}`);
     evt.currentTarget.reset();
   }

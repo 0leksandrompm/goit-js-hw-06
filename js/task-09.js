@@ -4,7 +4,6 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-console.log(getRandomHexColor())
 
 const bgColor = document.querySelector('.color');
 const changeBg = document.querySelector('.change-color')
@@ -13,6 +12,10 @@ const vidg= document.querySelector('.widget');
 
 
 changeBg.addEventListener('click', () => {
-  bgColor.textContent = getRandomHexColor();
-  vidg.parentNode.style.backgroundColor = getRandomHexColor();
+  const color = getRandomHexColor();
+  // console.log(color)
+  bgColor.textContent = color;
+  // console.log(color)
+  vidg.parentNode.style.backgroundColor = color;
+  // console.log(color)
 })
