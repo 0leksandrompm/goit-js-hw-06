@@ -6,7 +6,8 @@ function getRandomHexColor() {
 
 const contrBox =document.querySelector("#controls")
 const boxBox =document.querySelector("#boxes ")
-const divka = document.createElement("div");
+const create = document.querySelector("button [data-create]");
+const destroy = document.querySelector("button [data-destroy]");
 
 contrBox.addEventListener("submit", createBoxes);
 
